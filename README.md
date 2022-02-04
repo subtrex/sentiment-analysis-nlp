@@ -1,7 +1,14 @@
-# Sentiment Analysis using NLP
-Sentiment Analysis on iMDB movie reviews and classifying them into 2 labels : Positive and Negative using various ML models.
+# Sentiment Analysis using Natural Language Processing (NLP)
 
-iMDB Movie Review Dataset : https://ai.stanford.edu/~amaas/data/sentiment/
+Sentiment Analysis on IMDb Movie Reviews dataset using Natural Language Processing, classifying them into 2 labels: Positive and Negative.
+
+## Technologies
+
+Python | NLTK | TensorFlow | Keras
+
+## Data
+
+We made use of the [IMDb Movie Reviews dataset](https://ai.stanford.edu/~amaas/data/sentiment/)
 
 ## Steps
 1 - DataFrame Creation : First of all, we created a pandas dataframe consisting of 2 columns, text and label, from the raw data files.  
@@ -10,5 +17,17 @@ iMDB Movie Review Dataset : https://ai.stanford.edu/~amaas/data/sentiment/
 4 - Pipelines : We defined various pipelines,i.e, sequentially applied a list of transforms and a final estimator. The basic structure of the pipelines are CountVectorizer->TFIDFVectorizer->Model(). The models we used are listed below.   
 
 Overview of different accuracies:
-![accuracy list](https://user-images.githubusercontent.com/53677987/99288966-5a310480-2862-11eb-96df-e59f7bc60c28.jpg)
 
+| Classifier  | Accuracy(%) |
+| ------------- | ------------- |
+| Logistic Regression  | 89 |
+| Stochastic Gradient Descent  | 85  |
+| Multinomial Naive Bayes | 86 |
+| SVM (Linear) | 89 |
+| Decision Tree | 71 |
+| Extra Tree | 64 |
+| Multilayer Perceptron | 89 |
+| Ridge Classifier | 88 |
+| AdaBoost| 82 |
+| GradBoost | 80 |
+| Random Forest | 75 |
